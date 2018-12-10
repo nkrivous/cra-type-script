@@ -1,6 +1,11 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+
+import { CustomComponent } from "./CustomComponent";
+import { CustomComponentWithProps } from "./CustomComponentWithProps";
+// import AddButton from "shared/add-button/add-button";
+
+import "./App.css";
+import logo from "./logo.svg";
 
 class App extends Component {
   render() {
@@ -20,6 +25,9 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <CustomComponent />
+        <CustomComponentWithProps name1={"Nikolai"} />
+        {/* Add button: <AddButton /> */}
       </div>
     );
   }
